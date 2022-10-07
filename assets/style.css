@@ -31,10 +31,31 @@ body {
 }
 .btn {
     font-size: 2em;
-    
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(16, 19, 16);
+    outline:#d27c2c;
     border: 1px solid rgb(16, 19, 16);
 }
+.btn:hover {
+    border-color: #df1515;
+}
 #btn-answer {
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 5px 10px;
     border: 1px solid rgb(16, 19, 16);
-   
+    border: 1px solid rgb(16, 19, 16);
+}
+.controls {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+.hide {
+    display: none;
 }
