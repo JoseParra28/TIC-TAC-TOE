@@ -11,5 +11,30 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #af6c2d, transparent);
+    background: linear-gradient(4deg, #d27c2c,transparent);
+    background-repeat: no-repeat;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #4b7f66;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    opacity: 7;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px 0;
+}
+.btn {
+    font-size: 2em;
+    
+    border: 1px solid rgb(16, 19, 16);
+}
+#btn-answer {
+    border: 1px solid rgb(16, 19, 16);
+   
 }
