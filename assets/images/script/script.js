@@ -102,5 +102,21 @@ const questions = [
       { text: 'Chocolate & Hazelnut', correct: false },
       { text: 'Chocolate & Coconut', correct: true }
     ]
-  }
+  },
+  {
+    question: 'What is the French term for the dough used to make eclairs?',
+    answers: [
+      { text: 'Bonjour', correct: false },
+      { text: 'Pate chaud', correct: false },
+      { text: 'Mise en place', correct: false },
+      { text: 'Pate a choux', correct: true }
+    ]
+  },
+  {
+    question: 'Julia Child was born in Paris',
+    answers: [
+      { text: 'True', correct: false },
+      { text: 'False', correct: true }
+    ]
+  },
 ]
