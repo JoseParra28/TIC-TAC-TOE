@@ -77,36 +77,30 @@ function clearStatusClass(element) {
 }
 
 const questions = [
+  
   {
-    question: 'What is 2 + 2?',
+    question: 'What kind of icing is typically used to assemble gingerbread houses?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Italian Buttercream', correct: false },
+      { text: 'Royal Icing', correct: true },
+      { text: 'Ganache', correct: false },
+      { text: 'Flat Icing', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'What kind of cheese is traditionally used in making Tiramisu?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Mascarpone', correct: true },
+      { text: 'Blue', correct: false },
+      { text: 'Mozzarella', correct: false },
+      { text: 'Brie', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: ' What two flavors make up "Gianduja?"?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
-    ]
-  },
-  {
-    question: 'What is 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Chocolate & Hazelnut', correct: false },
+      { text: 'Chocolate & Coconut', correct: true }
     ]
   }
 ]
