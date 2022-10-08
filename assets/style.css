@@ -16,15 +16,24 @@ body {
     
 }
 .header {
+    color: #d27c2c;;
     font-size: 3em;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    margin-left: 43%;
+    margin-right: 43%;
+}
+span {
+    color: bisque;
 }
 .text {
-    font-size: 1em;
+    font-size: 2em;
     position:absolute;
+    margin-left: 36%;
+    margin-right: 33%;
+    margin-top: 5%;
+    border-bottom: 1px solid rgb(11, 37, 20);
+    font-weight:bold ;
+
 }
 body.correct {
     --hue: var(--hue-correct);
@@ -35,12 +44,14 @@ body.correct {
   }
   #question {
     font-size: 3em;
+    color:rgb(255, 210, 155);
+    border-bottom:solid 1px #d27c2c;
+    font-weight: bold;
   }
   
 .container {
     width: 800px;
     background-color: #4b7f66;
-    border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     opacity: 7;
@@ -132,6 +143,7 @@ animation-delay: 2s;
     }
     .cupcake img:nth-child(3) {
         animation-delay: 3s;
+        width: 90px;
         }
         .cupcake img:nth-child(4) {
             animation-delay: 4.6s;
@@ -154,3 +166,19 @@ animation-delay: 2s;
                                 animation-delay: 2s;
                                 width: 90px;
                                 }
+                                .cupcake img:nth-child(10) {
+                                    animation-delay: 4s;
+                                    width: 50px;
+                                    }
+                                    .cupcake img:nth-child(11) {
+                                        animation-delay: 1s;
+                                        width: 90px;
+                                        }
+                                        .cupcake img:nth-child(12) {
+                                            animation-delay: 2s;
+                                            width: 60px;
+                                            }
+                                            .cupcake img:nth-child(13) {
+                                                animation-delay: 3s;
+                                                width: 40px;
+                                                }
