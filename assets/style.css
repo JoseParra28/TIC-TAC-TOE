@@ -101,6 +101,16 @@ body.correct {
 .hide {
     display: none;
 }
+.rules {
+    position: absolute;
+    width: 40%;
+    padding: 15% 15%;
+}
+.rules-text {
+    position: absolute;
+    width: 40%;
+    padding: 15% 15%;
+}
 .cupcake img {
     width: 50px;
     animation: cupcake 7s linear infinite;
