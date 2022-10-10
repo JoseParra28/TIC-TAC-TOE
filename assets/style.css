@@ -104,16 +104,40 @@ body.correct {
 .rules {
     position: absolute;
     width: 40%;
-    padding: 15% 15%;
+    padding: 9% 14%;
+    
 }
 .rules-text {
     position: absolute;
-    width: 40%;
-    padding: 15% 15%;
+    width: 70%;
+    padding: 11% 14%;
+    display: ;
 }
+.rules-text:hover {
+
+    
+}
+#green {
+    color: #33c57e;
+}
+#red {
+    color: #945959;
+}
+#good-luck {
+    font-size: 1.em;
+    color: rgb(30, 151, 181) ;
+}
+.score {
+    position: absolute;
+    width: 50%;
+    padding: 10% 70%;
+}
+
+/*Background Animation*/
 .cupcake img {
     width: 50px;
     animation: cupcake 7s linear infinite;
+    z-index: 2;
 }
 .cupcake {
     margin:-25%;
