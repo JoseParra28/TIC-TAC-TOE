@@ -101,7 +101,7 @@ body.correct {
     top: 24%;
     right: 1%;
     position: absolute;
-    padding: 2% 6% 3%;
+    padding: 2% 4% 2%;
     width: 40%;
     background: linear-gradient(45deg, #8b745f,transparent);
     border-radius: 1% ;
@@ -113,16 +113,17 @@ body.correct {
     color: #133122;
 }
 .rules-div .rules-text:hover {
-    opacity: 2;
+    opacity: 1;
     
 }
 
 
 #form {
-    bottom: 30%;
+    bottom: 60%;
     justify-content: center;
     padding: 2% 6%;
     position: fixed;
+    display: none;
     
 }
 #local {
@@ -152,7 +153,7 @@ body.correct {
     justify-content: center;
     display: flex;
 }
-.timer {
+.timer-div {
     font-size: 1.5em;
     justify-content: center;
     display: flex;

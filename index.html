@@ -27,8 +27,8 @@
                 <h2 class="score-label">Score</h2>
                 <span class="your-score">0</span>
             </div>
-            <div class="timer">
-                <p id="timer">Time left</p>
+            <div class="timer-div">
+                <p id="timer">Time left 00:00</p>
             </div>
                
                 
@@ -57,12 +57,14 @@
             <input type="text" id="fname" class="input" name="first_name" placeholder="User" maxlength="7">
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" class="input" name="last_name">
+            <input type="submit" value="Create user name" id="join" onsubmit="showGame()">
             
         </form>
-    <div class="start">
+    
+</section>
+<div class="start">
     <input type="submit" value="Start" class="start-btn btn" id="start-btn"  onsubmit="showGame()">
 </div>
-</section>
     <div class="cupcake">
         
         <img src="assets/images/cupcake.png" alt="cupcake">
