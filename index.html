@@ -15,37 +15,22 @@
     <section class="game-section">
         <h1 class="header">Swee<span>Tarts</span></h1>
         <p class="text">The quiz game for dessert lovers</p>
-       <div> 
+       <div>
+         </header>
         <h2 class="rules">Game rules</h2>
         <p class="rules-text">You will have a quiestion before you, if you chooce the right answer, the screen will turn <span id="green">Green</span> but if the screen turns <span id="red">Red</span> that mean you clicked the wrong answer. <span id="good-luck">Good luck!</span></p>
         </div>
-        <div>
+        <div class="board">
             <div class="score">
                 <h2 class="score-label">Score</h2>
                 <span class="your-score">0</span>
-                <span></span>
             </div>
-            <div>
-                <p class="result">Result</p>
+            <div class="result"></div>
+            <p id="result">Result</p>
                 <p class="timer">Time left</p>
             </div>
         </div>
-        <section id="form">
-            <form action="https://8000-joseparra28-quizgame-r2fkt8qsqup.ws-eu70.gitpod.io/" method="GET" id="local">
-                <h2>Welcome</h2>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" class="input" name="first_name" placeholder="User" maxlength="7">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" class="input" name="last_name">
-                <input type="submit" value="Start game" id="join" onsubmit="showGame()">
-    
-    
-            </form>
-        </section>
-
-   
-
-    </header>
+        
 
     <div class="container">
         <div id="question-container" class="hide">
@@ -60,7 +45,20 @@
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
-    <button id="start-btn" class="start-btn btn">Start</button>
+
+    <section id="form">
+        <form action="https://8000-joseparra28-quizgame-t73ia64wjzx.ws-eu70.gitpod.io/" method="GET" id="local">
+            <h2>Welcome</h2>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" class="input" name="first_name" placeholder="User" maxlength="7">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" class="input" name="last_name">
+            
+        </form>
+    <div class="start">
+    <input type="submit" value="Start" class="start-btn btn" id="start-btn"  onsubmit="showGame()">
+</div>
+</section>
     <div class="cupcake">
         
         <img src="assets/images/cupcake.png" alt="cupcake">
@@ -79,12 +77,7 @@
        
     </div>
 </section>
-<section>
-   <div class="clouds">
-    <img src="assets/images/cloud1.png" alt="clouds">
-    
-   </div>
-</section>
+
     
     <script src="assets/images/script/script.js"></script>
 </body>

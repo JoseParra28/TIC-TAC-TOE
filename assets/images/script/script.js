@@ -4,13 +4,17 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+
+
 let shuffledQuestions, currentQuestionIndex
+
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+startButton.addEventListener('click', startGame)
 
 function startGame() {
   startButton.classList.add('hide')
