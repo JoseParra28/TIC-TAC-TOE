@@ -5,7 +5,7 @@
 } 
 
 :root {
-    --hue-neutral: 200;
+    --hue-neutral: 204;
     --hue-wrong: 0;
     --hue-correct: 145;
   }
@@ -88,6 +88,7 @@ body.correct {
 .hide {
     display: none;
 }
+
 .rules {
     top: 20%;
     right: 0%;
@@ -96,13 +97,26 @@ body.correct {
     width: 40%;
     
 }
-.rules-text {
+.rules-div .rules-text {
     top: 24%;
     right: 1%;
     position: absolute;
     padding: 2% 6% 3%;
     width: 40%;
+    background: linear-gradient(45deg, #8b745f,transparent);
+    border-radius: 1% ;
+    box-shadow: 0 5px 5px rgb(40, 41, 40);
+    opacity: 0;
 }
+.rules-text span {
+    font-size: 1.5em;
+    color: #133122;
+}
+.rules-div .rules-text:hover {
+    opacity: 2;
+    
+}
+
 
 #form {
     bottom: 30%;
@@ -124,16 +138,8 @@ body.correct {
     display: flex;
     padding-bottom: 5%;
 }
-#green {
-    color: #33c57e;
-}
-#red {
-    color: #945959;
-}
-#good-luck {
-    font-size: 1.em;
-    color: rgb(30, 151, 181) ;
-}
+
+
 
 .board {
     top: 20%;
