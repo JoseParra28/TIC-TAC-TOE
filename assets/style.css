@@ -15,26 +15,16 @@ body {
     margin: 0%;
     
 }
-.header {
-    color: #d27c2c;;
-    font-size: 3em;
+.game-section img {
     position: absolute;
-    margin-left: 43%;
-    margin-right: 43%;
+    width: 100%;
+    overflow: hidden;
+    height: 35vh;
+    width: 100%;
+    
+  
 }
-span {
-    color: bisque;
-}
-.text {
-    font-size: 2em;
-    position:absolute;
-    margin-left: 36%;
-    margin-right: 33%;
-    margin-top: 5%;
-    border-bottom: 1px solid rgb(11, 37, 20);
-    font-weight:bold ;
 
-}
 body.correct {
     --hue: var(--hue-correct);
   }
@@ -74,10 +64,6 @@ body.correct {
     font-size: 2em;
     border-radius: 5px;
     padding: 5px 10px;
-    font-size: 2em;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid rgb(16, 19, 16);
     outline:#d27c2c;
     border: 1px solid rgb(16, 19, 16);
 }
@@ -92,6 +78,7 @@ body.correct {
     border: 1px solid rgb(16, 19, 16);
     background-color: red;
 }
+
 .controls {
      display: flex;
      justify-content: center;
@@ -102,29 +89,40 @@ body.correct {
     display: none;
 }
 .rules {
+    top: 20%;
+    right: 0%;
     position: absolute;
+    padding: 2% 6% 3%;
     width: 40%;
-    padding: 9% 14%;
     
 }
 .rules-text {
+    top: 24%;
+    right: 1%;
     position: absolute;
-    width: 70%;
-    padding: 11% 14%;
-    display: none;
+    padding: 2% 6% 3%;
+    width: 40%;
 }
-.rules-text:hover {
 
+#form {
+    bottom: 30%;
+    justify-content: center;
+    padding: 2% 6%;
+    position: fixed;
     
 }
-#form {
-    display: table-column;
+#local {
+    padding-bottom: 5%;
     justify-content: center;
-    padding: 0% 30%;
-    position: fixed;
 }
 .input {
-    padding: 1%;
+    padding: 0%;
+}
+#form h2 {
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 5%;
 }
 #green {
     color: #33c57e;
@@ -138,19 +136,26 @@ body.correct {
 }
 
 .board {
-    bottom: 0%;
+    top: 20%;
+    left: 0%;
     position: absolute;
+    padding: 2% 6% 3%;
+    width: 40%;
+}
+.board h2, span {
+    justify-content: center;
+    display: flex;
+}
+.timer {
+    font-size: 1.5em;
+    justify-content: center;
+    display: flex;
+   
 }
 
 /*Background Animation*/
 
-.clouds {
-    position:absolute;
-    max-width: 100%;
-    top:0%;
-    left: 0;
-    overflow: hidden;
-}
+
 
 .cupcake img {
     width: 50px;
@@ -158,14 +163,12 @@ body.correct {
     z-index: 2;
 }
 .cupcake {
-    margin:-25%;
-    margin-top: 0%;
-    width: 70%;
-    display: flex;
+    margin-top: -7%;
     align-items: center;
     justify-content: space-around;
     position: absolute;
     top: 0px;
+    padding: 0% 2%;
 }
 
 @keyframes cupcake {
