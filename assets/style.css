@@ -134,21 +134,15 @@ body.correct {
 }
 
 /*Background Animation*/
+
 .clouds {
     position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding-top: 10%;
-    
-  }
-  .clouds img {
-    position: absolute;
-    top:0%;
     max-width: 100%;
-  }
+    top:0%;
+    left: 0;
+    overflow: hidden;
+}
+
 .cupcake img {
     width: 50px;
     animation: cupcake 7s linear infinite;
@@ -164,6 +158,7 @@ body.correct {
     position: absolute;
     top: 0px;
 }
+
 @keyframes cupcake {
     0%{
         transform: translateY(0);
