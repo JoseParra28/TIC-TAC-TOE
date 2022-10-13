@@ -15,6 +15,17 @@ body {
     margin: 0%;
     
 }
+.hero-image {
+    top: 8%;
+    padding: 0% 39%;
+    position:absolute;
+    z-index: 1;
+    
+}
+.hero-image img {
+    width: 100%;
+    background-repeat: no-repeat;
+}
 .game-section img {
     position: absolute;
     width: 100%;
@@ -22,7 +33,6 @@ body {
     height: 35vh;
     width: 100%;
     
-  
 }
 
 body.correct {
@@ -128,6 +138,7 @@ body.correct {
     z-index: 222;
     background-color: rgba(255,255, 255, 0.1);
     backdrop-filter: blur(20px);
+    display: none;
     
 }
 #local {
