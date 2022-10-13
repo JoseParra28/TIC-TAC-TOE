@@ -34,14 +34,10 @@
             </div>
             <div class="timer-div">
                 <p class="result"></p>
-                <p id="timer" onclick="start()">Time left 00:00</p>
-            </div>
-               
-                
+            </div>   
             </div>
         </div>
         
-
     <div class="container">
         <div id="question-container" class="hide">
         <div id="question">Question</div>
@@ -56,20 +52,19 @@
         </div>
     </div>
 
-    <section id="form">
-        <form action="h/" method="GET" id="local">
+    <section id="form" class="hide">
+        <form action="?" method="GET" id="hide"  >
             <h2>Welcome</h2>
             <label for="fname">First Name:</label>
             <input type="text" id="fname" class="input" name="first_name" placeholder="Name" maxlength="7">
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" class="input" name="last_name" placeholder="Last Name" maxlength="7">
-            <input type="submit" value="Start" class="start-btn btn" id="start-btn"  onsubmit="showGame()">
-            
+            <button id="hide-2" onclick="hide()">show</button>
         </form>
     
 </section>
 <div class="start">
-    
+    <input type="submit" value="Start" class="start-btn btn" id="start-btn"  onsubmit="showGame()">
 </div>
     <div class="cupcake">
         

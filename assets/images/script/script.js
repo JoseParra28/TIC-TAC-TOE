@@ -1,11 +1,14 @@
-let startButton = document.getElementById('start-btn')
-let nextButton = document.getElementById('next-btn')
-let questionContainerElement = document.getElementById('question-container')
-let questionElement = document.getElementById('question')
-let answerButtonsElement = document.getElementById('answer-buttons')
-let timer:
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
+let el = document.getElementById("form")
 
-let element = document.getElementById('timer');
+
+
+
+
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -17,16 +20,7 @@ nextButton.addEventListener('click', () => {
 })
 startButton.addEventListener('click', startGame)
 
-(function(){
-  let sec = 0;
-  timer = setInterval(()=>{
-    ele.innerHTML = '00;'+sec;
-    sec ++;
-    }, 1000()
 
-  )
-}
-)
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
