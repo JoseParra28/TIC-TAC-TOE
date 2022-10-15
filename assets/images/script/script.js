@@ -5,6 +5,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 let el = document.getElementById("form")
 
+el.style.display = 'inline'
 let shuffledQuestions, currentQuestionIndex
 
 
@@ -15,6 +16,9 @@ nextButton.addEventListener('click', () => {
 })
 startButton.addEventListener('click', startGame)
 
+function setVisibility(id,Visibility){
+  document.getElementById(id).style.display=Visibility
+}
 
 function startGame() {
   startButton.classList.add('hide')
@@ -124,4 +128,6 @@ const questions = [
     ]
   },
 ]
+
+
 

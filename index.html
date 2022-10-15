@@ -52,16 +52,19 @@
         </div>
     </div>
 
-    <section id="form" class="hide">
+    <section>
+        <div id="form" class="form">
         <form action="?" method="GET" id="hide"  >
             <h2>Welcome</h2>
             <label for="fname">First Name:</label>
             <input type="text" id="fname" class="input" name="first_name" placeholder="Name" maxlength="7">
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" class="input" name="last_name" placeholder="Last Name" maxlength="7">
-            <button id="hide-2" onclick="hide()">show</button>
+            <button type="button" name="t1" value="Submit"
+            onclick="setVisibility('form','none')"
+            ></button>
         </form>
-    
+    </div>
 </section>
 <div class="start">
     <input type="submit" value="Start" class="start-btn btn" id="start-btn"  onsubmit="showGame()">
