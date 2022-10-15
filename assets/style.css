@@ -21,10 +21,13 @@ body {
     position:absolute;
     z-index: 1;
     
+    
 }
 .hero-image img {
     width: 100%;
     background-repeat: no-repeat;
+    box-shadow: 0 0 10px 1px;
+    
 }
 .game-section img {
     position: absolute;
