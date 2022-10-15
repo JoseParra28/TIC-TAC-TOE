@@ -3,9 +3,20 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-let el = document.getElementById("form")
+const startingMinutes = 100;
+let time = startingMinutes * 60;
 
-el.style.display = 'inline'
+const countdownEl = document.getElementById('countdown')
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown(){
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  countdownEl.innerHTML = `${minutes}: %{seconds}`
+  time--;
+}
 let shuffledQuestions, currentQuestionIndex
 
 

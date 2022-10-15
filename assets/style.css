@@ -134,16 +134,17 @@ body.correct {
 
 
 #form {
-    bottom: 50%;
+    bottom: 0%;
+    left: 0%;
+    margin: 1%;
     justify-content: center;
-    padding: 2% 6%;
-    position: fixed;
+    padding: 30% 35%;
+    position:fixed;
     z-index: 222;
     background-color: rgba(255,255, 255, 0.1);
     backdrop-filter: blur(20px);
-    display: block;
-   
-    
+    display: inline;
+ 
 }
 #local {
     padding-bottom: 5%;
@@ -178,7 +179,7 @@ font-size: 2em;
     justify-content: center;
     display: flex;
 }
-.timer-div {
+#countdown {
     font-size: 1.5em;
     justify-content: center;
     display: flex;
