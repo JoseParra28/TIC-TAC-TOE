@@ -3,24 +3,22 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const startingMinutes = 6;
-const startingSeconds = 60;
-let time = startingMinutes * 60;
 
 
-const countdownEl = document.getElementById('countdown')
 
-setInterval(updateCountdown, 1000);
-
-function updateCountdown(){
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  countdownEl.innerHTML = `${minutes}: Minutes left`
-  time--;
-}
 
 let shuffledQuestions, currentQuestionIndex
+
+let timeleft = 60;
+let downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Finished!!!";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft + "Seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
 
 
 startButton.addEventListener('click', startGame)
