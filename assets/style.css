@@ -29,6 +29,10 @@ body {
     box-shadow: 0 0 10px 1px;
     
 }
+.h2-text {
+    font-size: 1em;
+    border-bottom: 1px solid rgb(21, 20, 20);
+}
 .game-section img {
     position: absolute;
     width: 100%;
@@ -146,24 +150,25 @@ body.correct {
     display: inline;
  
 }
-#local {
-    padding-bottom: 5%;
-    justify-content: center;
-}
+
 .input {
     padding: 0%;
+    color: black;
 }
-#fname {
-font-size: 1.5em;
-}
-#lname {
+#username {
 font-size: 2em;
+
 }
 #form h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     justify-content: center;
     display: flex;
     padding-bottom: 5%;
+ 
+}
+#form button {
+    background-color: black;
+    color: whitesmoke;
 }
 
 
