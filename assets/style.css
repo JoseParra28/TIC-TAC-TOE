@@ -77,24 +77,42 @@ body.correct {
     gap: 15px;
     margin: 20px 0;
 }
-.btn {
-    font-size: 2em;
-    border-radius: 5px;
-    padding: 5px 10px;
-    outline:#d27c2c;
-    border: 1px solid rgb(16, 19, 16);
-}
-.btn:hover {
-    border-color: #df1515;
-}
-#btn-answer {
-    font-size: 1em;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid rgb(16, 19, 16);
-    border: 1px solid rgb(16, 19, 16);
-    background-color: red;
-}
+
+    .btn {
+        --hue: var(--hue-neutral);
+        border: 1px solid hsl(var(--hue), 100%, 30%);
+        background-color: hsl(var(--hue), 50%, 50%);
+        border-radius: 5px;
+        padding: 1% 5%;
+        color: black;
+        outline: none;
+        font-size: 1.5em;
+      }
+      
+      .btn:hover {
+        border-color: black;
+      }
+      
+      .btn.correct {
+        --hue: var(--hue-correct);
+        color: black;
+      }
+      
+      .btn.wrong {
+        --hue: var(--hue-wrong);
+      }
+      
+      .start-btn, .next-btn {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+      
+      .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
 .controls {
      display: flex;
@@ -147,7 +165,7 @@ body.correct {
     z-index: 222;
     background-color: rgba(255,255, 255, 0.1);
     backdrop-filter: blur(20px);
-    display: inline;
+    display: none;
  
 }
 

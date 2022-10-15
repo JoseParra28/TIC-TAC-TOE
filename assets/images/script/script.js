@@ -121,8 +121,8 @@ const questions = [
   {
     question: ' What two flavors make up "Gianduja?"?',
     answers: [
-      { text: 'Chocolate & Hazelnut', correct: false },
-      { text: 'Chocolate & Coconut', correct: true }
+      { text: 'Chocolate & Hazelnut', correct: true },
+      { text: 'Chocolate & Coconut', correct: false }
     ]
   },
   {
