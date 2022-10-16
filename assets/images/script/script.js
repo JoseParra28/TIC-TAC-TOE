@@ -9,7 +9,7 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-let timeleft = 60;
+let timeleft = 90;
 let downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
@@ -103,17 +103,14 @@ const questions = [
     answers: [
       { text: 'Italian Buttercream', correct: false },
       { text: 'Royal Icing', correct: true },
-      { text: 'Ganache', correct: false },
-      { text: 'Flat Icing', correct: false }
     ]
   },
   {
     question: 'What kind of cheese is traditionally used in making Tiramisu?',
     answers: [
       { text: 'Mascarpone', correct: true },
-      { text: 'Blue', correct: false },
-      { text: 'Mozzarella', correct: false },
-      { text: 'Brie', correct: false }
+      { text: 'Blue cheese', correct: false },
+      
     ]
   },
   {
@@ -126,8 +123,7 @@ const questions = [
   {
     question: 'What is the French term for the dough used to make eclairs?',
     answers: [
-      { text: 'Bonjour', correct: false },
-      { text: 'Pate chaud', correct: false },
+      
       { text: 'Mise en place', correct: false },
       { text: 'Pate a choux', correct: true }
     ]
