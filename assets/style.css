@@ -1,396 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
-*,*::before, *::after {
+
+* {
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
-    font: weight 600px;;
-} 
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
 :root {
-    --hue-neutral: 204;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-  }
-body {
-    --hue: var(--hue-neutral);
-    padding: 0%;
-    margin: 0%;
-    
-}
-.hero-image {
-    top: 8%;
-    padding: 0% 39%;
-    position:absolute;
-    z-index: 1;
-    font-size: 2em; 
-}
-.hero-image img {
-    width: 100%;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px 1px;
-    border-radius: 2%;
-    
-}
-.h2-text {
-    font-size: 1em;
-    border-bottom: 1px solid rgb(21, 20, 20);
-}
-.cloud-section img {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 35vh;
-    width: 100%;
-    
-}
-
-body.correct {
-    --hue: var(--hue-correct);
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
   }
   
-  body.wrong {
-    --hue: var(--hue-wrong);
+  body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
   }
-  #question {
-    font-size: 3em;
-    color:rgb(255, 210, 155);
-    border-bottom:solid 1px #d27c2c;
-    font-weight: bold;
+  h1 {
+    font-size: 54px;
+    text-transform: uppercase;
   }
   
-.container {
-    width: 800px;
-    background-color: #4b7f66;
-    padding: 1% 5%;
-    box-shadow: 0 0 10px 2px;
-    opacity: 7;
-    display: flex;
-    width: 100vw;
+  .container {
+    padding: 40px;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(4deg, #d27c2c,transparent);
-    background-repeat: no-repeat;
-    background-color: hsl(var(--hue), 100%, 20%);
-}
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 15px;
-    margin: 20px 0;
-}
-
-    .btn {
-        --hue: var(--hue-neutral);
-        border: 1px solid hsl(var(--hue), 100%, 30%);
-        background-color: hsl(var(--hue), 50%, 50%);
-        border-radius: 5px;
-        padding: 1% 5%;
-        color: black;
-        outline: none;
-        font-size: 1.5em;
-      }
-      
-      .btn:hover {
-        border-color: black;
-
-      }
-      
-      .btn.correct {
-        --hue: var(--hue-correct);
-        color: black;
-      }
-      
-      .btn.wrong {
-        --hue: var(--hue-wrong);
-      }
-      
-      .start-btn, .next-btn {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 10px 20px;
-      }
-      
-      .controls {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-.controls {
-     display: flex;
-     justify-content: center;
-     text-align: center;
-}
-
-.hide {
-    display: none;
-}
-
-.rules {
-    top: 7%;
-    right: 0%;
-    position: absolute;
-    padding: 2% 11% 3%;
-    width: 40%;
-    font-size: 2.2em;
-}
-.rules-div .rules-text {
-    top: 15%;
-    right: 1%;
-    position: absolute;
-    padding: 2%;
-    width: 40%;
-    font-size: 1.5em;
-    background-color: rgba(154, 149, 149, 0.1);
-    backdrop-filter: blur(20px);
-    border-radius: 1% ;
-    box-shadow: 0 5px 5px rgb(40, 41, 40);
-    opacity: 0;
-    z-index: 2;
-}
-.rules-text span {
-    font-size: 1.5em;
-    color: #133122;
-}
-.rules-div .rules-text:hover {
-    opacity: 1;
-    
-}
-
-
-#form {
-    bottom: 36%;
-    left: 20%;
-    right: 20%;
-    justify-content: center;
-    padding: 6% 16%;
-    position:fixed;
-    z-index: 222;
-    background-color: rgba(255,255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    display: inline;
-}
-
-.input {
-    padding: 0%;
-    color: black;
-}
-#username {
-font-size: 2em;
-
-}
-#form h2 {
-    font-size: 2em;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #37505C;
+  }
+  
+  #gameboard {
+    width: 300px;
     display: flex;
-    padding-bottom: 5%;
- 
-}
-#form button {
-    background-color: black;
-    color: whitesmoke;
-}
-
-
-
-.board {
-    top: 6%;
-    left: 0%;
-    position: absolute;
-    padding: 2% 6% 3%;
-    width: 40%;
-    font-size: 2em;
-}
-.board h2, span {
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .box {
+    height: 100px;
+    width: 100px;
     display: flex;
-}
-#countdown {
-    font-size: 1.5em;
-    justify-content: center;
-    display: flex;
-   
-}
-
-/*Background Animation*/
-
-
-
-.cupcake img {
-    width: 50px;
-    animation: cupcake 7s linear infinite;
-    z-index: 2;
-}
-.cupcake {
-    margin-top: -7%;
     align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    top: 0px;
-    left: 20%;
-    padding: 0% 2%;
-    z-index: 3;
-}
-
-@keyframes cupcake {
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-        
-        opacity: 1;
-    }
-    70%{
-    
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(80vh);
-        opacity: 0;
-    }
-    
-}
-.cupcake img:nth-child(1) {
-animation-delay: 2s;
-}
-.cupcake img:nth-child(2) {
-    animation-delay: 1s;
-    width: 40px;
-    }
-    .cupcake img:nth-child(3) {
-        animation-delay: 3s;
-        width: 90px;
-        }
-        .cupcake img:nth-child(4) {
-            animation-delay: 4.6s;
-            width: 50px;
-            }
-            .cupcake img:nth-child(5) {
-                animation-delay: 7s;
-                }
-                .cupcake img:nth-child(6) {
-                    animation-delay: 5.5s;
-                    width: 70px;
-                    }
-                    .cupcake img:nth-child(7) {
-                        animation-delay: 2s;
-                        }
-                        .cupcake img:nth-child(8) {
-                            animation-delay: 5s;
-                            }
-                            .cupcake img:nth-child(9) {
-                                animation-delay: 2s;
-                                width: 90px;
-                                }
-                                .cupcake img:nth-child(10) {
-                                    animation-delay: 4s;
-                                    width: 50px;
-                                    }
-                                    .cupcake img:nth-child(11) {
-                                        animation-delay: 1s;
-                                        width: 90px;
-                                        }
-                                        .cupcake img:nth-child(12) {
-                                            animation-delay: 2s;
-                                            width: 60px;
-                                            }
-                                            .cupcake img:nth-child(13) {
-                                                animation-delay: 3s;
-                                                width: 40px;
-                                                }
-                                                .cupcake img:nth-child(1) {
-animation-delay: 2s;
-}
-.cupcake img:nth-child(2) {
-    animation-delay: 1s;
-    width: 40px;
-    }
-    .cupcake img:nth-child(3) {
-        animation-delay: 3s;
-        width: 90px;
-        }
-        .cupcake img:nth-child(4) {
-            animation-delay: 4.6s;
-            width: 50px;
-            }
-            .cupcake img:nth-child(5) {
-                animation-delay: 7s;
-                }
-                .cupcake img:nth-child(6) {
-                    animation-delay: 5.5s;
-                    width: 70px;
-                    }
-                    .cupcake img:nth-child(7) {
-                        animation-delay: 2s;
-                        }
-                        .cupcake img:nth-child(8) {
-                            animation-delay: 5s;
-                            }
-                            .cupcake img:nth-child(9) {
-                                animation-delay: 2s;
-                                width: 90px;
-                                }
-                                .cupcake img:nth-child(10) {
-                                    animation-delay: 4s;
-                                    width: 50px;
-                                    }
-                                    .cupcake img:nth-child(11) {
-                                        animation-delay: 1s;
-                                        width: 90px;
-                                        }
-                                        .cupcake img:nth-child(12) {
-                                            animation-delay: 2s;
-                                            width: 60px;
-                                            }
-                                            .cupcake img:nth-child(13) {
-                                                animation-delay: 3s;
-                                                width: 40px;
-                                                }.cupcake img:nth-child(14) {
-                                                    animation-delay: 2s;
-                                                    }
-                                                    .cupcake img:nth-child(15) {
-                                                        animation-delay: 1s;
-                                                        width: 40px;
-                                                        }
-                                                        .cupcake img:nth-child(16) {
-                                                            animation-delay: 3s;
-                                                            width: 90px;
-                                                            }
-                                                            .cupcake img:nth-child(17) {
-                                                                animation-delay: 4.6s;
-                                                                width: 50px;
-                                                                }
-                                                                .cupcake img:nth-child(18) {
-                                                                    animation-delay: 7s;
-                                                                    }
-                                                                    .cupcake img:nth-child(19) {
-                                                                        animation-delay: 5.5s;
-                                                                        width: 70px;
-                                                                        }
-                                                                        .cupcake img:nth-child(20) {
-                                                                            animation-delay: 2s;
-                                                                            }
-                                                                            .cupcake img:nth-child(21) {
-                                                                                animation-delay: 5s;
-                                                                                }
-                                                                                .cupcake img:nth-child(22) {
-                                                                                    animation-delay: 2s;
-                                                                                    width: 90px;
-                                                                                    }
-                                                                                    .cupcake img:nth-child(23) {
-                                                                                        animation-delay: 4s;
-                                                                                        width: 50px;
-                                                                                        }
-                                                                                        .cupcake img:nth-child(24) {
-                                                                                            animation-delay: 1s;
-                                                                                            width: 90px;
-                                                                                            }
-                                                                                            .cupcake img:nth-child(25) {
-                                                                                                animation-delay: 2s;
-                                                                                                width: 60px;
-                                                                                                }
-                                                                                                .cupcake img:nth-child(26) {
-                                                                                                    animation-delay: 3s;
-                                                                                                    width: 40px;
-                                                                                                    }
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+  }
+  .box:nth-child(3n) {
+    border-right: none;
+  }
+  .box:nth-child(6) ~ .box {
+    border-bottom: none;
+  } 
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
+  
